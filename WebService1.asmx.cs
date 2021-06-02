@@ -47,20 +47,7 @@ namespace Ejercicio1
             return ds;
         }
 
-        [HttpPost]
-        public string Materia(int ci)
-        {
-            SqlConnection con = new SqlConnection();
-            SqlDataAdapter ada = new SqlDataAdapter();
-            con.ConnectionString = "SERVER=LAPTOP-BSK5MLUQ;DATABASE=materias;integrated security=true;";
-            ada.SelectCommand = new SqlCommand();
-            ada.SelectCommand.CommandText = "select materia from materia where ci='" + ci + "'";
-            ada.SelectCommand.CommandType = CommandType.Text;
-            ada.SelectCommand.Connection = con;
-            
-            return ada.ToString();
-        }
-
+       
 
     }
 }
