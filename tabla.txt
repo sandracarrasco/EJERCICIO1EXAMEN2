@@ -1,0 +1,15 @@
+create table materia(
+ci int,
+nombre varchar(30),
+materia varchar(30)
+
+)
+
+insert into materia values(123,'Rosio Calliconde','INF131');
+insert into materia values(234,'Marcela Soto','MAT123');
+insert into materia values(123,'Rosio Calliconde','MAT123');
+insert into materia values(345,'Rodrigo Valdez','INF121');
+insert into materia values(456,'Ivan Quispe','INF111');
+
+
+select * from materia  where ci=123 ;
